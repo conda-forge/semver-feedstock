@@ -1,6 +1,6 @@
 {% set name = "semver" %}
-{% set version = "2.7.5" %}
-{% set sha256sum = "15d57e2b288b453708dda3b8b271c51353582dad2571fb0197027d69d85e6624" %}
+{% set version = "2.7.6" %}
+{% set sha256sum = "5782c9cff587b31081927db51f2319a05e20ea21bbe2c370ecb25b2a01d6fd32" %}
 
 package:
   name: {{ name }}
@@ -33,6 +33,8 @@ about:
   summary: Python package to work with Semantic Versioning
   description: |
     A Python module for semantic versioning. Simplifies comparing versions.
+  dev_url: https://github.com/k-bx/python-semver
+  doc_url: https://github.com/k-bx/python-semver
 
 extra:
   recipe-maintainers:
