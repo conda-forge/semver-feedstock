@@ -1,6 +1,6 @@
 {% set name = "semver" %}
-{% set version = "2.7.6" %}
-{% set sha256sum = "5782c9cff587b31081927db51f2319a05e20ea21bbe2c370ecb25b2a01d6fd32" %}
+{% set version = "2.7.9" %}
+{% set sha256sum = "1ffb55fb86a076cf7c161e6b5931f7da59f15abe217e0f24cea96cc8eec50f42" %}
 
 package:
   name: {{ name }}
