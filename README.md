@@ -15,9 +15,8 @@ A Python module for semantic versioning. Simplifies comparing versions.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/semver-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/semver-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/semver-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/semver-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/semver-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/semver-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/semver-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/semver-feedstock)
 
 Current release info
 ====================
