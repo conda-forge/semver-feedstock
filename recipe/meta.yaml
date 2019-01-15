@@ -29,6 +29,7 @@ test:
 about:
   home: https://github.com/k-bx/python-semver
   license: BSD
+  license_file: LICENSE.txt
   summary: Python package to work with Semantic Versioning
   description: |
     A Python module for semantic versioning. Simplifies comparing versions.
