@@ -1,6 +1,6 @@
 {% set name = "semver" %}
-{% set version = "2.8.1" %}
-{% set sha256sum = "5b09010a66d9a3837211bb7ae5a20d10ba88f8cb49e92cb139a69ef90d5060d8" %}
+{% set version = "2.9.0" %}
+{% set sha256sum = "ed1edeaa0c27f68feb74f09f715077fd07b728446dc2bb7fc470fc0f737873a0" %}
 
 package:
   name: {{ name }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -32,6 +32,7 @@ test:
 about:
   home: https://github.com/k-bx/python-semver
   license: BSD
+  license_file: LICENSE.txt
   summary: Python package to work with Semantic Versioning
   description: |
     A Python module for semantic versioning. Simplifies comparing versions.
