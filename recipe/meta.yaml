@@ -1,33 +1,33 @@
 {% set name = "semver" %}
-{% set version = "2.9.0" %}
-{% set sha256sum = "ed1edeaa0c27f68feb74f09f715077fd07b728446dc2bb7fc470fc0f737873a0" %}
+{% set version = "2.9.1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256sum }}
+  sha256: 723be40c74b6468861e0e3dbb80a41fc3b171a2a45bf956c245304773dc06055
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - pysemver = semver:main
 
 requirements:
   host:
     - pip
     - python
-    - setuptools
-
   run:
     - python
 
 test:
   imports:
     - semver
+  commands:
+    - pysemver -h
 
 about:
   home: https://github.com/k-bx/python-semver
