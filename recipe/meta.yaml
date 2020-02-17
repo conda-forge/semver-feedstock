@@ -26,6 +26,8 @@ requirements:
 test:
   imports:
     - semver
+  commands:
+    - pysemver -h
 
 about:
   home: https://github.com/k-bx/python-semver
