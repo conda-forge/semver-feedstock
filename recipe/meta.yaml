@@ -1,5 +1,5 @@
 {% set name = "semver" %}
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b08a84f604ef579e474ce448672a05c8d50d1ee0b24cee9fb58a12b260e4d0dc
+  sha256: c0a4a9d1e45557297a722ee9bac3de2ec2ea79016b6ffcaca609b0bc62cf4276
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/k-bx/python-semver
-  license: BSD
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: Python package to work with Semantic Versioning
   description: |
