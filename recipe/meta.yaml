@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/k-bx/python-semver
-  license: BSD
+  license:	BSD-3-Clause
   license_file: LICENSE.txt
   summary: Python package to work with Semantic Versioning
   description: |
