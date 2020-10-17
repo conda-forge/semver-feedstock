@@ -1,5 +1,5 @@
 {% set name = "semver" %}
-{% set version = "2.10.2" %}
+{% set version = "2.11.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0a4a9d1e45557297a722ee9bac3de2ec2ea79016b6ffcaca609b0bc62cf4276
+  sha256: ef6614e75c1526784580ed0a2939272fcd36f4aad472617774e588c4adbc08a3
 
 build:
   noarch: python
