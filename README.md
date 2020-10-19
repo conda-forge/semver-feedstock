@@ -3,11 +3,15 @@ About semver
 
 Home: https://github.com/k-bx/python-semver
 
-Package license: BSD
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/semver-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package to work with Semantic Versioning
+
+Development: https://github.com/k-bx/python-semver
+
+Documentation: https://github.com/k-bx/python-semver
 
 A Python module for semantic versioning. Simplifies comparing versions.
 
