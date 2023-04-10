@@ -14,14 +14,14 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - pysemver = semver:main
+    - pysemver = semver.cli:main
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
   run:
-    - python
+    - python >=3.7
 
 test:
   imports:
