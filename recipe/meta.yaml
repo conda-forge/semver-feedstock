@@ -1,5 +1,5 @@
 {% set name = "semver" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6253adb39c70f6e51afed2fa7152bcd414c411286088fb4b9effb133885ab4cc
+  sha256: 8769a03a93507fecdf19b6eefb08d5e95b462504871a61e29e09798822888c94
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pysemver = semver.cli:main
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
 
