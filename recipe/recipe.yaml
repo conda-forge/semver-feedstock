@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: semver
-  version: "3.1.2"
+  version: "3.2.0"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: bea193552413194252d33ff26ce0962b76669bd1c6fb17e8e203ac37f072feaf
+  sha256: adf2c822d2d8908a1dce0121da7da6511851fbd33080e61da8d2ba1e0677e8f3
 
 build:
   number: 0
